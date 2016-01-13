@@ -8,7 +8,7 @@ class TimezonesController extends Controller
     public function index($input = NULL)
     {
         $currentTime = ($input)
-            ? Carbon::now(str_replace('-', '/', $input))
+            ? Carbon::createFromTime(str_replace('-', '/', $input))
             : Carbon::now();
 
         return view('timezones::time', compact('currentTime'));

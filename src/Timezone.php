@@ -12,7 +12,7 @@ class Timezone {
     public function toPST($input)
     {
         return Carbon::createFromTimestamp(strtotime($input))
-                    ->timezone('America/Los_Angeles');
+                    ->timezone('PST');
     }
 
     /**
@@ -23,7 +23,7 @@ class Timezone {
     public function toGMT($input)
     {
         return Carbon::createFromTimestamp(strtotime($input))
-                    ->timezone('Europe/London');
+                    ->timezone('GMT');
     }
 
     /**
@@ -34,7 +34,7 @@ class Timezone {
     public function toCET($input)
     {
         return Carbon::createFromTimestamp(strtotime($input))
-                    ->timezone('Europe/Amsterdam');
+                    ->timezone('CET');
     }
 
     /**
@@ -45,7 +45,7 @@ class Timezone {
     public function toEST($input)
     {
         return Carbon::createFromTimestamp(strtotime($input))
-            ->timezone('America/New_york');
+                    ->timezone('EST');
     }
 
     /**
@@ -56,7 +56,7 @@ class Timezone {
     public function toAKST($input)
     {
         return Carbon::createFromTimestamp(strtotime($input))
-            ->timezone('America/Anchorage');
+                    ->timezone('AKST');
     }
 
     /**
@@ -67,7 +67,7 @@ class Timezone {
     public function toMST($input)
     {
         return Carbon::createFromTimestamp(strtotime($input))
-            ->timezone('America/Denver');
+                    ->timezone('MST');
     }
 
     /**
@@ -78,7 +78,7 @@ class Timezone {
     public function toAMT($input)
     {
         return Carbon::createFromTimestamp(strtotime($input))
-            ->timezone('America/Manaus');
+                    ->timezone('AMT');
     }
 
     /**
@@ -89,7 +89,7 @@ class Timezone {
     public function toBRST($input)
     {
         return Carbon::createFromTimestamp(strtotime($input))
-            ->timezone('America/Sao_Paulo');
+                    ->timezone('BRST');
     }
 
     /**
@@ -100,15 +100,7 @@ class Timezone {
     public function toCST($input)
     {
         return Carbon::createFromTimestamp(strtotime($input))
-            ->timezone('America/Mexico_City');
+                    ->timezone('CST');
     }
-
-
-
-
-
-
-
-
 }
 
