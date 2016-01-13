@@ -32,7 +32,7 @@ Raphaelb\Timezones\TimezoneServiceProvider::class
 use Timezone;
 ```
 
-###### Usage
+###### Examples
 ```php
 return Timezone::toGMT($date);
 or
