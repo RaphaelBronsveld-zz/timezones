@@ -93,7 +93,7 @@ class Timezone {
     }
 
     /**
-     * Time to the BRST timezone.
+     * Time to the CST timezone.
      * @param $input
      * @return static
      */
