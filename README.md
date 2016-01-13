@@ -10,18 +10,18 @@
 
 | **Laravel** | 5.1 |
 |:-----------:|:----:|
-| Timezones |  [v1.1](https://packagist.org/packages/raphaelb/timezones) |
+| Timezones |  [v1.2](https://packagist.org/packages/raphaelb/timezones) |
   
-**Laravel** package providing easy Timezone functionality via the Carbon class.
+**Laravel** package providing easy Timezone functionality via the Carbon class & making your code cleaner.
 
-## 1.1 Released
+## 1.2 Released
 - [**Additional Features**]
     
 Extra timezone usability.
 
 ###### Composer
 ```JSON
-"raphaelb/timezones": "~1.1"
+"raphaelb/timezones": "~1.2"
 ```
 
 ###### Laravel
@@ -43,11 +43,11 @@ Returning carbon instances so you can do whatever you want.
 
 ###### Examples
 ```php
-return Timezone::toGMT($date);
+return Timezone::toTimezone($date, 'GMT');
 
-return Timezone::toPST($date)->format('d-m-Y');
+print Timezone::toTimezone($date, 'PST')->format('d-m-Y');
 
-print Timezone::toCET('11:32 13-1-2016');
+return Timezone::toTimezone('11:32 13-1-2016', 'CST');
 ```
 
 ### Copyright/License

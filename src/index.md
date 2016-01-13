@@ -15,7 +15,7 @@ class Actor extends Model
      */
     public function getCreatedAtAttribute($date)
     {
-        return Timezone::toGMT($date);
+        return Timezone::toTimezone($date, 'GMT');
     }
 
     /**
@@ -24,7 +24,7 @@ class Actor extends Model
      */
     public function getUpdatedAtAttribute($date)
     {
-        return Timezone::toGMT($date)->format('d-m-Y');
+        return Timezone::toTimezone($date, 'PST');
     }
 }
 
