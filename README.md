@@ -26,7 +26,10 @@ Extra timezone usability.
 
 ###### Laravel
 ```php
+//Add to the providers array in your app config file.
 Raphaelb\Timezones\TimezoneServiceProvider::class
+
+//Add to the alias array in your app config file.
 'Timezone'  => Raphaelb\Timezones\Facades\Timezone::class,
 
 use Timezone;
@@ -39,6 +42,8 @@ use Timezone;
 return Timezone::toGMT($date);
 
 return Timezone::toPST($date)->format('d-m-Y');
+
+print Timezone::toCET('11:32 13-1-2016');
 ```
 
 ### Copyright/License
