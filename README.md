@@ -12,7 +12,7 @@
 |:-----------:|:----:|
 | Timezones | [v1.1](tree/master) |
   
-**Laravel** package providing easy Timezone functionality.
+**Laravel** package providing easy Timezone functionality via the Carbon class.
 
 ## 1.1 Released
 - [**Additional Features**]
@@ -34,9 +34,11 @@ use Timezone;
 
 ###### Examples
 ```php
+//Always returning Carbon instances so you can do whatever you want with it.
+
 return Timezone::toGMT($date);
-or
-return Timezone::toPST($date);
+
+return Timezone::toPST($date)->format('d-m-Y');
 ```
 
 ### Copyright/License
