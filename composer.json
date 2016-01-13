@@ -2,11 +2,14 @@
     "name": "raphaelb/timezones",
     "description": "Easy timezone usability using the Carbon class.",
     "keywords": ["laravel","timezones", "time"],
+    "homepage": "https://github.com/Raphaelbronsveld/timezones",
     "license": "MIT",
     "authors": [
         {
             "name": "Raphael Bronsveld",
-            "email": "raphaelbronsveld@outlook.com"
+            "email": "raphaelbronsveld@outlook.com",
+            "homepage": "http://raphaelbronsveld.com/",
+            "role": "Backend Developer"
         }
     ],
     "autoload": {
