@@ -1,6 +1,6 @@
 {
     "name": "raphaelb/timezones",
-    "description": "Easy timezone usability.",
+    "description": "Easy timezone usability using the Carbon class.",
     "license": "MIT",
     "authors": [
         {

@@ -10,7 +10,7 @@
 
 | **Laravel** | 5.1 |
 |:-----------:|:----:|
-| Timezones | [v1.1](tree/master) |
+| Timezones | [v1.1](https://packagist.org/packages/raphaelb/timezones) |
   
 **Laravel** package providing easy Timezone functionality via the Carbon class.
 
@@ -35,10 +35,14 @@ Raphaelb\Timezones\TimezoneServiceProvider::class
 use Timezone;
 ```
 
+###### Features
+```
+Index page with controller/route/view to demonstrate @ 'yoursite.com/timezones/{timezone}'
+Returning carbon instances so you can do whatever you want.
+```
+
 ###### Examples
 ```php
-//Always returning Carbon instances so you can do whatever you want with it.
-
 return Timezone::toGMT($date);
 
 return Timezone::toPST($date)->format('d-m-Y');
