@@ -10,7 +10,7 @@
 
 | **Laravel** | 5.1 |
 |:-----------:|:----:|
-| Timezones | [v1.0](tree/master) |
+| Timezones | [v1.1](tree/master) |
   
 **Laravel** package providing easy Timezone functionality.
 
@@ -21,7 +21,7 @@ Extra timezone usability.
 
 ###### Composer
 ```JSON
-"raphaelb/timezones": "~1.0"
+"raphaelb/timezones": "~1.1"
 ```
 
 ###### Laravel
@@ -30,6 +30,13 @@ Raphaelb\Timezones\TimezoneServiceProvider::class
 'Timezone'  => Raphaelb\Timezones\Facades\Timezone::class,
 
 use Timezone;
+```
+
+###### Usage
+```php
+return Timezone::toGMT($date);
+or
+return Timezone::toPST($date);
 ```
 
 ### Copyright/License
