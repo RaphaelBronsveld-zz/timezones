@@ -1,6 +1,7 @@
 {
     "name": "raphaelb/timezones",
     "description": "Easy timezone usability using the Carbon class.",
+    "keywords": ["laravel","timezones", "time"],
     "license": "MIT",
     "authors": [
         {

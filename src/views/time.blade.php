@@ -30,15 +30,20 @@
                 display: inline-block;
             }
  
-            .title {
+            .time {
                 font-size: 96px;
+            }
+
+            .title {
+                font-size: 70px;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">{{ $currentTime }}</div>
+            <div class="title">Your server time</div>
+                <div class="time" id="time">{{ $currentTime }}</div>
             </div>
         </div>
     </body>

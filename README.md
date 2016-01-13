@@ -10,7 +10,7 @@
 
 | **Laravel** | 5.1 |
 |:-----------:|:----:|
-| Timezones | [v1.1](https://packagist.org/packages/raphaelb/timezones) |
+| Timezones |  [v1.1](https://packagist.org/packages/raphaelb/timezones) |
   
 **Laravel** package providing easy Timezone functionality via the Carbon class.
 
