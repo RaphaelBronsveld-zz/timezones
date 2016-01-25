@@ -30,9 +30,9 @@ Extra timezone usability.
 Raphaelb\Timezones\TimezoneServiceProvider::class
 
 //Add to the alias array in your app config file.
-'Timezone'  => Raphaelb\Timezones\Facades\Timezone::class,
+'Time'  => Raphaelb\Timezones\Facades\Timezone::class,
 
-use Timezone;
+use Time;
 ```
 
 ###### Features
@@ -43,11 +43,11 @@ Returning carbon instances so you can do whatever you want.
 
 ###### Examples
 ```php
-return Timezone::toTimezone($date, 'GMT');
+return Time::toTimezone($date, 'GMT');
 
-print Timezone::toTimezone($date, 'PST')->format('d-m-Y');
+print Time::toTimezone($date, 'PST')->format('d-m-Y');
 
-return Timezone::toTimezone('11:32 13-1-2016', 'CST');
+return Time::toTimezone('11:32 13-1-2016', 'CST');
 ```
 
 ### Copyright/License
