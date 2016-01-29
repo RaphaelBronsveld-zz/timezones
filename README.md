@@ -30,24 +30,24 @@ Extra timezone usability.
 Raphaelb\Timezones\TimezoneServiceProvider::class
 
 //Add to the alias array in your app config file.
-'Time'  => Raphaelb\Timezones\Facades\Timezone::class,
+'Timezone'  => Raphaelb\Timezones\Facades\Timezone::class,
 
-use Time;
+use Timezone;
 ```
 
 ###### Features
 ```
-Index page with controller/route/view to demonstrate @ 'yoursite.com/timezones/{timezone}'
+Index page with controller/route/view to demonstrate @ 'yoursite.com/timezones/{gmt}'
 Returning carbon instances so you can do whatever you want.
 ```
 
 ###### Examples
 ```php
-return Time::toTimezone($date, 'GMT');
+$time = new Timezone();
+return $time->toTimezone($date, 'GMT')
+                 ->format('y-m-d');
 
-print Time::toTimezone($date, 'PST')->format('d-m-Y');
-
-return Time::toTimezone('11:32 13-1-2016', 'CST');
+// Helpful for your getcreatedattr/getupdatedattr methods in a model.
 ```
 
 ### Copyright/License
