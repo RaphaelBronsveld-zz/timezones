@@ -15,7 +15,7 @@
 **Laravel** package providing easy Timezone functionality via the Carbon class & making your code cleaner.
 
 ## 1.2 Released
-- [**Additional Features**]
+- [**This is work in progress**]
     
 Extra timezone usability.
 
