@@ -1,6 +1,6 @@
 {
     "name": "raphaelb/timezones",
-    "description": "Easy timezone usability using the Carbon class.",
+    "description": "Easy timezone usability using the Carbon class in Laravel.",
     "keywords": ["laravel","timezones", "time"],
     "homepage": "https://github.com/Raphaelbronsveld/timezones",
     "license": "MIT",

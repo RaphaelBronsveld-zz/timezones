@@ -10,7 +10,7 @@
 
 | **Laravel** | 5.1 |
 |:-----------:|:----:|
-| Timezones | [v1.3](tree/master) |
+| Timezones | v1.3 |
   
 **Laravel** package providing easy Timezone functionality.
 
