@@ -4,9 +4,13 @@
         <title>Laravel Timezones</title>
  
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+<<<<<<< HEAD
         <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+=======
+ 
+>>>>>>> acbaddc21d745c3e59660b00dbab4064ca7835e7
         <style>
             html, body {
                 height: 100%;
@@ -18,7 +22,11 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
+<<<<<<< HEAD
                 font-family: 'Lato', sans-serif;
+=======
+                font-family: 'Lato';
+>>>>>>> acbaddc21d745c3e59660b00dbab4064ca7835e7
             }
  
             .container {
@@ -32,6 +40,7 @@
                 display: inline-block;
             }
  
+<<<<<<< HEAD
             .title {
                 font-size: 96px;
             }
@@ -54,11 +63,20 @@
             .notimezone {
                 color: red;
                 font-weight: 600;
+=======
+            .time {
+                font-size: 96px;
+            }
+
+            .title {
+                font-size: 70px;
+>>>>>>> acbaddc21d745c3e59660b00dbab4064ca7835e7
             }
         </style>
     </head>
     <body>
         <div class="container">
+<<<<<<< HEAD
             <div id="app" class="content">
                 <current time="{{ $currentTime }}"></current>
                 <template id="time-template">
@@ -104,4 +122,12 @@
             el: '#app'
         });
     </script>
+=======
+            <div class="content">
+            <div class="title">Your server time</div>
+                <div class="time" id="time">{{ $currentTime }}</div>
+            </div>
+        </div>
+    </body>
+>>>>>>> acbaddc21d745c3e59660b00dbab4064ca7835e7
 </html>

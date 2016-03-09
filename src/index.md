@@ -1,8 +1,10 @@
 #### Introduction
+
 Timezones is a **Laravel** package providing additional Time functionality.
+
 Very easy to use.
 
-
+=======
 
 #### Live updating example
 ```php
@@ -46,7 +48,6 @@ class User {
         
 }
 ```
-
 
 #### Copyright/License
 Copyright 2015 [Raphael Bronsveld](https://github.com/RaphaelBronsveld) - [MIT Licensed](http://RaphaelBronsveld.mit-license.org)
