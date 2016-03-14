@@ -22,7 +22,37 @@ Made for people who really just want to have an easy way of going about dealing 
 
 ###### Examples
 
-For examples please check the index.md file in the src folder.
+```php
+class User {
+    
+    /**
+     * Resolving from the container.
+     */
+    public function getCreatedAtAttribute($date)
+    {
+        return app()->make('timezones')->toTimezone($date, 'GMT');
+    }
+    
+    /**
+     * Getting an instance the facade way.
+     */
+    public function getUpdatedAtAttribute($date)
+    {
+        return Timezones::toTimezone($date, 'PST');
+    }
+    
+    /**
+     * Or step by step.
+     */
+    public function time()
+    {
+        // Constructor accepts a different format for your needs.
+        $time = new Timezones('m-d-Y H:i:s');
+        return $time->toTimezone('09-03-2016 16:00:00', 'EST');
+    }
+        
+}
+```
 
     
 ###### Composer require
