@@ -19,6 +19,8 @@ class TimezonesServiceProvider extends ServiceProvider {
      * boot method
      */
     public function boot() {
+        require __DIR__.'/routes.php';
+        
         $this->loadViewsFrom(__DIR__.'/views', 'timezones');
 
         $this->publishes([
@@ -33,7 +35,6 @@ class TimezonesServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-        include __DIR__.'/routes.php';
         $this->app->make('Raphaelb\Timezones\TimezonesController');
 
         $this->app->bind('timezones', 'Raphaelb\Timezones\Timezones');
