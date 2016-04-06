@@ -18,17 +18,17 @@ class Timezones {
     public $format;
 
     /**
-     * Timezone constructor.
+     * Constructor. Setting default laravel format.
      *
      * @param null|string $format
      */
-    public function __construct($format = 'Y-n-j G:i:s')
+    public function __construct($format = 'Y-m-d H:i:s')
     {
         $this->format = $format;
     }
 
     /**
-     * toTimezone method
+     * Given string to a different timezone.
      *
      * @param $timestring
      * @param $timezone
