@@ -24,25 +24,37 @@ Made for people who really just want to have an easy way of going about dealing 
 
 ```php
 class User {
+
+    // Accessors in model class.
     
     /**
-     * Resolving from the container.
+     * Get created_at attr.
+     * @param $date
+     * @return string
      */
     public function getCreatedAtAttribute($date)
     {
-        return app()->make('timezones')->toTimezone($date, 'GMT');
+        return app('timezones')
+            ->toTimezone($date, 'gmt')
+            ->format('d-m-Y H:i:s');
     }
-    
+
     /**
-     * Getting an instance the facade way.
+     * Get updated_at attr.
+     * 
+     * @param $date
+     * @return string
      */
     public function getUpdatedAtAttribute($date)
     {
-        return Timezones::toTimezone($date, 'PST');
+        return app('timezones')
+                ->toTimezone($date, 'gmt')
+                ->format('d-m-Y H:i:s');
     }
     
     /**
-     * Or step by step.
+     * Or inject a format when you know the given one. 
+     * Otherwise Carbon will fail. 
      */
     public function time()
     {
