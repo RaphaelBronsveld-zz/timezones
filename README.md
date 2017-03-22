@@ -15,7 +15,6 @@
 **Laravel** package providing easy Timezone functionality.
 
 ## 1.3 Released
-- *Includes a live updating example*
 - *Easy usability*
 
 Made for people who really just want to have an easy way of going about dealing with time issues. 

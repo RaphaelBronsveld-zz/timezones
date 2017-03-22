@@ -17,26 +17,20 @@ use App\Http\Controllers\Controller;
 
 class TimezonesController extends Controller
 {
+
     /**
-     * @param \Illuminate\Http\Request $request
-     * @param null                     $input
+     * Return the proper time with the given timezone.
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|\Raphaelb\Timezones\Timezones
+     * @param null $timezone
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index(Request $request, $input = null)
+    public function index($timezone = null)
     {
         /**
          * @var $currentTime Timezones
          */
         $currentTime = app()->make('timezones');
-        $currentTime = $currentTime->toTimezone(Carbon::now(), $input);
-
-        $timezone = $input;
-
-        // Auto updating time.
-        if($request->ajax()){
-            return $currentTime;
-        }
+        $currentTime = $currentTime->toTimezone(Carbon::now(), $timezone);
 
         return view('timezones::time', compact('currentTime', 'timezone'));
     }

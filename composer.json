@@ -12,6 +12,9 @@
             "role": "Backend Developer"
         }
     ],
+    "suggest": {
+        "nesbot/carbon": "This package is based on Carbon methods. Laravel ships with Carbon by default."
+    },
     "autoload": {
         "psr-4": {
             "Raphaelb\\Timezones\\": "src/"
