@@ -13,14 +13,15 @@ namespace Raphaelb\Timezones;
 
 use Carbon\Carbon;
 
-class Timezones {
+class Timezones
+{
 
     public $format;
 
     /**
      * Constructor. Setting default laravel format.
      *
-     * @param null|string $format
+     * @param string $format
      */
     public function __construct($format = 'Y-m-d H:i:s')
     {
@@ -33,7 +34,7 @@ class Timezones {
      * @param $timestring
      * @param $timezone
      *
-     * @return static
+     * @return Carbon
      */
     public function toTimezone($timestring, $timezone)
     {
@@ -41,4 +42,3 @@ class Timezones {
                         ->timezone($timezone);
     }
 }
-
