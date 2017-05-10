@@ -1,6 +1,7 @@
 ![Laravel logo](http://laravel.com/assets/img/laravel-logo.png)  Laravel Timezones
 ========================
 
+[![Build status](https://travis-ci.org/RaphaelBronsveld/timezones.svg?branch=master)](https://travis-ci.org/RaphaelBronsveld/timezones)
 [![GitHub Version](https://img.shields.io/github/release/raphaelbronsveld/timezones.svg?branch=master&style=flat-square)](https://packagist.org/packages/raphaelb/timezones)
 [![Total Downloads](https://img.shields.io/packagist/dt/raphaelb/timezones.svg?style=flat-square)](https://packagist.org/packages/raphaelb/timezones)
 [![License](http://img.shields.io/badge/license-MIT-ff69b4.svg?style=flat-square)](http://RaphaelBronsveld.mit-license.org)
