@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Facade;
 
 class Timezones extends Facade
 {
-
     /**
      * @return string
      */
