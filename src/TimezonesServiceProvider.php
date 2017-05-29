@@ -13,31 +13,15 @@ namespace Raphaelb\Timezones;
 
 use Illuminate\Support\ServiceProvider;
 
-class TimezonesServiceProvider extends ServiceProvider {
-
+class TimezonesServiceProvider extends ServiceProvider
+{
     /**
-     * boot method
-     */
-    public function boot() {
-        require __DIR__.'/routes.php';
-        
-        $this->loadViewsFrom(__DIR__.'/views', 'timezones');
-
-        $this->publishes([
-                __DIR__.'/views' => base_path('resources/views/raphaelb/timezones'),
-        ]);
-    }
-
-    /**
-     * Register the application services.
+     * Register the package services.
      *
      * @return void
      */
     public function register()
     {
-        $this->app->make('Raphaelb\Timezones\TimezonesController');
-
         $this->app->bind('timezones', 'Raphaelb\Timezones\Timezones');
-
     }
 }

@@ -13,8 +13,8 @@ namespace Raphaelb\Timezones\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Timezones extends Facade {
-
+class Timezones extends Facade
+{
     /**
      * @return string
      */
