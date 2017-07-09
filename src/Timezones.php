@@ -1,6 +1,5 @@
 <?php
-
-/*
+/**
  * This file is part of the Timezones package.
  *
  * Raphael Bronsveld <raphaelbronsveld@outlook.com>
