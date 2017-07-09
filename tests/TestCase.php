@@ -8,17 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Raphaelb\Timezones\Facades;
+namespace Raphaelb\Timezones\Tests;
 
-use Illuminate\Support\Facades\Facade;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
-class Timezones extends Facade
+abstract class TestCase extends OrchestraTestCase
 {
-    /**
-     * @return string
-     */
-    protected static function getFacadeAccessor()
-    {
-        return 'timezones';
-    }
+    //
 }
